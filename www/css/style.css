@@ -1,1 +1,7 @@
 /* Empty. Add your own CSS if you like */
+h1, h2, h3, h4, h5, h6, .icon, .button{
+	color: #04142B;
+}
+.scroll-content, .menu, .input-label,.item-input, .okay{
+	background-color: #04142B;
+}
