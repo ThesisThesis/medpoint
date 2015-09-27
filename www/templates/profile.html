@@ -1,11 +1,11 @@
-<ion-view view-title="Profile">
+<ion-view view-title="Profile" ng-controller="AppCtrl">
 	<div class="bar bar-header item-input-inset"></div>
 	<div class="bar bar-header item-input-inset">
 	  <label class="item-input-wrapper">
 	    <i class="icon ion-camera" href="#"></i>
 	    <input type="text" placeholder="Post Something...">
 	  </label>
-	  <button class="button button-clear">
+	  <button ng-click="addPost()" class="button button-clear">
 	    Post
 	  </button>
 	</div>
