@@ -34,6 +34,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
+     .state('app.medicines', {
+      url: '/medicines',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/medicines.html',
+          controller: 'MedCtrl'
+        }
+      }
+    })
+
 //     .state('app.map', {
 //   url: '/map',
 //   views: {
@@ -81,15 +91,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
-     .state('app.medicines', {
-      url: '/medicines',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/medicines.html',
-          controller: 'MedCtrl'
-        }
-      }
-    })
+    
 
   .state('app.single', {
     url: '/medicines/:medId',
