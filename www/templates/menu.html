@@ -19,19 +19,19 @@
 
     <ion-content class="list">
       <ion-list>
-        <ion-item menu-close ng-click="login()" class="item item-icon-left">
+       <!--  <ion-item menu-close ng-click="login()" class="item item-icon-left">
         <i class="icon ion-email"></i>
           Login
-        </ion-item>
-        <ion-item menu-close href="#/app/search" class="item item-icon-left">
+        </ion-item> -->
+        <ion-item menu-close href="#/app/newsfeed" class="item item-icon-left">
         <i class="icon ion-code-working"></i>
           MedNews
         </ion-item>
-        <ion-item menu-close href="#/app/browse" class="item item-icon-left">
+        <ion-item menu-close href="#/app/profile" class="item item-icon-left">
         <i class="icon ion-android-contact"></i>
           Profile
         </ion-item>
-        <ion-item menu-close href="#/app/playlists" class="item item-icon-left">
+        <ion-item menu-close href="#" class="item item-icon-left">
         <i class="icon ion-gear-a"></i>        
           Settings
         </ion-item>
@@ -39,8 +39,22 @@
     </ion-content>
 
   </ion-side-menu>
-</ion-side-menus>
 
+    </ion-side-menus>
+
+    <ion-nav-buttons side="right">
+        <ion-header-bar class="bar bar-header">
+     <button class="button icon ion-navicon"></button>
+     <button class="button">Login</button>
+  </ion-header-bar>
+  </ion-nav-buttons>
+
+
+
+   <!--  <div class="bar bar-header">
+     <button class="button icon ion-navicon"></button>
+     <button class="button">Edit</button>
+    </div> -->
 
      <div class="tabs tabs-icon-top">
       <a class="tab-item" href="#/app/pharmacy">
@@ -51,7 +65,7 @@
         <i class="icon ion-clipboard"></i>
         Medicine
       </a>
-      <a class="tab-item">
+      <a class="tab-item" href="#/app/map">
         <i class="icon ion-earth"></i>
         Map
       </a>

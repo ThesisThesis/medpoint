@@ -5,3 +5,12 @@ h1, h2, h3, h4, h5, h6, .icon, .button{
 .scroll-content, .menu{
 	background-color: #04142B;
 }
+
+.scroll {
+    height: 100%;
+}
+ 
+#map {
+    width: 100%;
+    height: 100%;
+}

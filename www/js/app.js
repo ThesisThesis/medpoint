@@ -22,6 +22,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   });
 })
 
+
+
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 
@@ -32,6 +34,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
+//     .state('app.map', {
+//   url: '/map',
+//   views: {
+//     'menuContent': {
+//       templateUrl: 'templates/map.html',
+//       controller: 'MapController'
+//     }
+//   }
+// })
+
   .state('app.search', {
     url: '/search',
     views: {
@@ -41,11 +53,20 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
-  .state('app.browse', {
-      url: '/browse',
+  .state('app.newsfeed', {
+    url: '/newsfeed',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/newsfeed.html'
+      }
+    }
+  })
+
+  .state('app.profile', {
+      url: '/profile',
       views: {
         'menuContent': {
-          templateUrl: 'templates/browse.html'
+          templateUrl: 'templates/profile.html'
         }
       }
     })
@@ -79,5 +100,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/newsfeed');
 });
+
