@@ -10,20 +10,18 @@
 	  </button>
 	</div>
   <ion-content>
-
   	<ion-list>
-      <ion-item ng-repeat="post in posts" href="#/app/profile">
-      <div class="list card">
-		  <div class="item item-avatar">
+      <div class="list list-inset" ng-repeat="post in posts" href="#/app/profile">
+      	<div class="item item-avatar" >
 		    <img src="mcfly.jpg">  
 		   	<h2>{{post.name}}</h2> 
-        <p style="color:#04142B;">{{post.date}}</p>
-        	</div>
+        	<p style="color:#04142B;">{{post.date}}</p>
+          </div>
          <div class="item item-body">
 		    <img class="full-image" src="delorean.jpg">
 		    <p style="color:#04142B;">
-        {{post.content}}</p>
-         <p>
+        		{{post.content}}</p>
+         	</p>
 		      <a style="color:#04142B;" href="#" class="subdued">1 Like</a>
 		      <a style="color:#04142B;" href="#" class="subdued">5 Comments</a>
 		    </p>
@@ -42,9 +40,7 @@
 		      Share
 		    </a>
 		  </div>
-	 </div>
-
-      </ion-item>
+	  </div>
     </ion-list>
 
   </ion-content>
