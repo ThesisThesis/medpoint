@@ -43,12 +43,26 @@ angular.module('starter.controllers', [])
 
 .controller('MedCtrl', function($scope) {
   $scope.medicines = [
-    { title: 'df', id: 1 },
-    { title: 'dd', id: 2 },
-    { title: 'df', id: 3 },
-    { title: 'df', id: 4 },
-    { title: 'dfd', id: 5 },
-    { title: 'f', id: 6 }
+    { title: 'Alaxan Fr', id: 1 },
+    { title: 'Ascorbic Acid', id: 2 },
+    { title: 'Bisolvan', id: 3 },
+    { title: 'Biogesic', id: 4 },
+    { title: 'Buscopan', id: 5 },
+    { title: 'Centrum', id: 6 },
+    { title: 'Cherrifer', id: 7  },
+    { title: 'Clusivol', id: 8 },
+    { title: 'Constant', id: 9 },
+    { title: 'Decolgen', id: 10 },
+    { title: 'Dolfenal', id: 11 },
+    { title: 'Dimecron', id: 12 },
+    { title: 'Ferlin', id: 13 },
+    { title: 'Growee', id: 14 },
+    { title: 'Loperamide', id: 15 },
+    { title: 'Neozep', id: 16 },
+    { title: 'Pharmaton', id: 17 },
+    { title: 'Propan TLC', id: 18 },
+    { title: 'Stresstabs', id: 19 },
+    { title: 'Tuseran', id: 20}
   ];
 })
 
