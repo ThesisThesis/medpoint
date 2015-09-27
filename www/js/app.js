@@ -70,15 +70,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-    .state('app.playlists', {
-      url: '/playlists',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/playlists.html',
-          controller: 'PlaylistsCtrl'
-        }
-      }
-    })
 
     .state('app.pharmacy', {
       url: '/pharmacy',
@@ -90,22 +81,22 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
-     .state('app.medicine', {
-      url: '/medicine',
+     .state('app.medicines', {
+      url: '/medicines',
       views: {
         'menuContent': {
-          templateUrl: 'templates/medicine.html',
-          controller: 'PlaylistsCtrl'
+          templateUrl: 'templates/medicines.html',
+          controller: 'MedCtrl'
         }
       }
     })
 
   .state('app.single', {
-    url: '/playlists/:playlistId',
+    url: '/medicines/:medId',
     views: {
       'menuContent': {
-        templateUrl: 'templates/playlist.html',
-        controller: 'PlaylistCtrl'
+        templateUrl: 'templates/medicine.html',
+        controller: 'MedsCtrl'
       }
     }
   });
