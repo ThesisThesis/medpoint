@@ -76,8 +76,8 @@ angular.module('starter.controllers', [])
   ];
 })
 
-// .controller('MedsCtrl', function($scope, $stateParams) {
-// });
+.controller('MedsCtrl', function($scope, $stateParams) {
+})
 
  .controller('AddPostCtrl', function($scope) {
      $scope.posts = [
@@ -89,7 +89,7 @@ angular.module('starter.controllers', [])
       { name: 'Jebb Luza', date: 'June 7, 2015', content: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum  ' },
 
   ];
-})
+});
 
  // .controller('MapCtrl', function($scope, $ionicLoading, $compile) {
  //      function initialize() {
