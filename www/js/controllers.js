@@ -39,6 +39,16 @@ angular.module('starter.controllers', [])
       $scope.closeLogin();
     }, 1000);
   };
+
+  //  $scope.post = [];
+  // $scope.addPost = function() {
+  //   $scope.post.push({
+  //     "title": $scope.post
+  //   });
+  //   alert('Successfully Added!');
+  //   $scope.title = "";
+  // };
+
 })
 
 .controller('MedCtrl', function($scope) {
@@ -66,9 +76,20 @@ angular.module('starter.controllers', [])
   ];
 })
 
-.controller('MedsCtrl', function($scope, $stateParams) {
-});
+// .controller('MedsCtrl', function($scope, $stateParams) {
+// });
 
+ .controller('AddPostCtrl', function($scope) {
+     $scope.posts = [
+      { name: 'Helena Briones', date: 'June 7, 2015', content: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum  ' },
+      { name: 'Lyrrech Wellz', date: 'June 7, 2015', content: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum  ' },
+      { name: 'Jezreel Crebillo', date: 'June 7, 2015', content: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum  ' },
+      { name: 'Pauline Bacal', date: 'June 7, 2015', content: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum  ' },
+      { name: 'Axel Cordova', date: 'June 7, 2015', content: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum  ' },
+      { name: 'Jebb Luza', date: 'June 7, 2015', content: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum  ' },
+
+  ];
+})
 
  // .controller('MapCtrl', function($scope, $ionicLoading, $compile) {
  //      function initialize() {
