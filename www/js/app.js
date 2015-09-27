@@ -44,11 +44,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
-    .state('app.map', {
-  url: '/map',
+    .state('app.maps', {
+  url: '/maps',
   views: {
     'menuContent': {
-      templateUrl: 'templates/map.html',
+      templateUrl: 'templates/maps.html',
       controller: 'MapCtrl'
     }
   }
