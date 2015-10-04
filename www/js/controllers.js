@@ -119,6 +119,7 @@ angular.module('starter.controllers', [])
         var marker = new google.maps.Marker({
           position: myLatlng,
           map: map,
+        //  draggable: true;
           title: 'Uluru (Ayers Rock)'
         });
 
